@@ -29,3 +29,34 @@ function restar() {
     }
     document.getElementById("resultado").innerHTML = texto;
 }
+function multiplicar() {
+    var x,y,producto,texto;
+    x = document.getElementById("num1").value;
+    y = document.getElementById("num2").value;
+
+if(isNaN(x) || isNaN(y)){
+    texto = "es necesario escribir 2 numeros"
+ }
+
+ else{
+     producto = parseFloat(x) * parseFloat(y);
+     texto = "Resultado: " + producto;
+ }
+ document.getElementById("resultado").innerHTML = texto;
+}
+
+function division() {
+    var x,y,cociente,texto;
+    x = document.getElementById("num1").value;
+    y = document.getElementById("num2").value;
+
+if(isNaN(x) || isNaN(y)){
+    texto = "es necesario escribir 2 numeros"
+ }
+
+ else{
+     cociente = parseFloat(x) / parseFloat(y);
+     texto = "Resultado: " + cociente;
+ }
+ document.getElementById("resultado").innerHTML = texto;
+}
